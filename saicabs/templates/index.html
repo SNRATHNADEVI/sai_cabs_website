@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Cabs - Car Rental Service</title>
+    <style>
+        /* CSS Styles */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background-color: #333; color: white; text-align: center; padding: 10px 0; }
+        nav a { color: white; padding: 10px; text-decoration: none; }
+        nav a:hover { background-color: #575757; }
+        .container { padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select { width: 100%; padding: 8px; }
+        .btn { padding: 10px 15px; background-color: #333; color: white; border: none; cursor: pointer; }
+        .btn:hover { background-color: #575757; }
+        .services, .reviews, .contact-info, .about { margin-top: 20px; }
+        .footer-info { display: flex; justify-content: space-between; }
+        .footer-info div { width: 30%; }
+        .chat-icon { position: fixed; bottom: 20px; right: 20px; }
+        .chat-icon img { width: 50px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sai Cabs - Reliable and Affordable Taxi Service</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#tariff">Tariff</a>
+            <a href="#services">Services</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Sai Cabs is a reliable and affordable taxi service in Chennai, offering local rides, hourly city packages, outstation trips, temple tours, airport transfers, and one-way drops. Our neat and clean sanitized vehicles and friendly driver community provide 24/7 assistance, ensuring 100% confirmed cab reservations.</p>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section id="enquiry" class="enquiry">
+            <h2>Enquiry Form</h2>
+            <form action="/enquiry" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Book Now</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Tariff Section -->
+        <section id="tariff" class="tariff">
+            <h2>Our Tariff</h2>
+            <h3>Round Trip</h3>
+            <table>
+                <tr><th>Vehicle Type</th><th>Rate/Km</th><th>Driver Bata</th><th>Additional Charge</th></tr>
+                <tr><td>Sedan</td><td>₹10</td><td>₹300</td><td>₹100</td></tr>
+                <tr><td>SUV</td><td>₹15</td><td>₹350</td><td>₹150</td></tr>
+            </table>
+
+            <h3>One Way</h3>
+            <table>
+                <tr><th>Vehicle Type</th><th>Rate/Km</th><th>Driver Bata</th><th>Additional Charge</th></tr>
+                <tr><td>Sedan</td><td>₹12</td><td>₹300</td><td>₹100</td></tr>
+                <tr><td>SUV</td><td>₹18</td><td>₹350</td><td>₹150</td></tr>
+            </table>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Local Rentals</li>
+                <li>One Way Drop</li>
+                <li>Round Trip Cabs</li>
+                <li>Corporate Fleet</li>
+            </ul>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews">
+            <h2>Customer Reviews</h2>
+            <p>Explore experiences from our valued customers. Their reviews speak louder than our words.</p>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section id="contact" class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Address: #110, Thiruvalluvar Nagar, Kadappa Road, Kolathur, Chennai - 600099</p>
+            <p>Email: ravikumarpidge@gmail.com</p>
+            <p>Phone: +91 96771 41612</p>
+            <p>Give a missed call to book: 9677141612</p>
+        </section>
+
+         WhatsApp Chat Icon 
+        <div class="chat-icon">
+            <a href="https://wa.me/919677141612" target="_blank"><img src="whatsapp-icon.png" alt="Chat with us"></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <div>
+                <h3>We are here to assist you</h3>
+                <p>You can call us directly</p>
+            </div>
+            <div>
+                <h3>We care about safety</h3>
+                <p>Rating system, mandatory checks, safety button</p>
+            </div>
+            <div>
+                <h3>Why Choose Sai Cabs?</h3>
+                <p>Fair prices, verified drivers, door-to-door service</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Sai Cabs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
